@@ -68,21 +68,6 @@ for _ in range(submissions):
     # Next to the next page
     next_button.click()
 
-"""# Define a function to select random options for radio buttons and checkboxes
-def select_random_radio():
-    # Select random radio button options
-    radio_groups = driver.find_elements(By.XPATH, '//*[@data-automation-id="questionItem"]')
-    for radio_group in radio_groups:
-        radio_buttons = radio_group.find_elements(By.XPATH, './/input[@type="radio"]')
-        if radio_buttons:
-            random.choice(radio_buttons).click()
-
-def select_random_checkboxes():
-# Select a random number of checkboxes
-    checkboxes = driver.find_elements(By.XPATH, '//input[@type="checkbox"]')
-    for checkbox in random.sample(checkboxes, k=random.randint(0, len(checkboxes))):
-        checkbox.click()"""
-
 def select_random_radio():
     # Select random radio button options
     radio_groups = driver.find_elements(By.XPATH, '//*[@data-automation-id="questionItem"]')
