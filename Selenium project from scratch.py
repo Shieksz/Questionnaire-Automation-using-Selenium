@@ -39,8 +39,8 @@ for _ in range(submissions):
 
     start_now_button.click()
 
-    # Locate and click the "Next" button 7 times
-    for _ in range(6):
+    # Locate and click the "Next" N number of times
+    for _ in range(#Number of times#):
         try:
             # Wait for the "Next" button to be clickable
             next_button = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, '//*[@aria-label="Next"]')))
@@ -81,11 +81,6 @@ def select_random_radio():
     )
     for checkbox in random.sample(checkboxes, k=random.randint(0, len(checkboxes))):
         checkbox.click()
-# Select a random number of checkboxes
-    """checkboxes = driver.find_elements(By.XPATH, '//input[@type="checkbox"]')
-    for checkbox in random.sample(checkboxes, k=random.randint(0, len(checkboxes))):
-        checkbox.click()"""
-
 
 # Main loop to navigate through pages
 while True:
